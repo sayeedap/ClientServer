@@ -10,4 +10,8 @@ public static void main(String args[])throws Exception{
     while(!str.equals("stop")){  
     str=br.readLine();  
     dout.writeUTF(str);  
-
+ dout.flush();  
+    str2=din.readUTF();  
+    System.out.println("Server says: "+str2);  
+    }  
+      
