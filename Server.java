@@ -11,7 +11,7 @@ Socket s=ss.accept();
     String str="",str2="";  
     while(!str.equals("stop")){  
     str=din.readUTF();  
-    System.out.println("Client Says: "+str);  
+    System.out.println("Sruthi Says: "+str);  
     str2=br.readLine();  
     dout.writeUTF(str2);  
     dout.flush();  
