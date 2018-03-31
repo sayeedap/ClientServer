@@ -17,7 +17,7 @@ class Client
 	dout.writeUTF(str);  
 	dout.flush();  
 	str2=din.readUTF();  
-	System.out.println("Server says: "+str2);  
+	System.out.println("Sayeed says: "+str2);  
     }  
     dout.close();  
     s.close();  
