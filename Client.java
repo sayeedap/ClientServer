@@ -8,10 +8,11 @@ class Client
     DataInputStream din=new DataInputStream(s.getInputStream());  
     DataOutputStream dout=new DataOutputStream(s.getOutputStream());  
     BufferedReader br=new BufferedReader(new InputStreamReader(System.in));  
-      
+    System.out.println("Type stop To Close the communication ");
     String str="",str2="";  
     while(!str.equals("stop"))
     {  
+	System.out.println("Enter the string");	
 	str=br.readLine();  
 	dout.writeUTF(str);  
 	dout.flush();  
