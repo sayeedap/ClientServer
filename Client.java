@@ -12,7 +12,7 @@ class Client
     String str="",str2="";  
     while(!str.equals("stop"))
     {  
-	System.out.println("Enter the string");	
+	System.out.println("Enter the request");	
 	str=br.readLine();  
 	dout.writeUTF(str);  
 	dout.flush();  
